@@ -1,13 +1,96 @@
-{"updated":"2026-10-12T22:30:00+02:00","workers":[
-{"name":"TussieBot","type":"Grok Bot (orkestrator)","task":"Bygger modelloversikt på tussienorway.github.io/huggingface","status":"aktiv","last":"2026-10-12T22:30:00+02:00","link":"https://github.com/tussienorway"},
-{"name":"Multi-Mind Forsker","type":"Grok Bot","task":"Modelltester: 4B, Hermes-4-14B, AgentTuned 9B, Gemma 4","status":"aktiv","last":"2026-10-12T21:39:00+02:00","link":""},
-{"name":"Lokal Agent-Bygger","type":"Grok Bot","task":"PR #24 (følelsesmodell, shadow mode) merget","status":"ledig","last":"2026-10-12T21:00:00+02:00","link":"https://github.com/tussienorway/majere-core/pull/24"},
-{"name":"LLmModelResercher","type":"Grok Bot","task":"Ingen kjent oppgave","status":"ledig","last":"","link":""},
-{"name":"MajereAi","type":"Grok Bot","task":"Ingen kjent oppgave","status":"ledig","last":"","link":"https://github.com/tussienorway/majere-site"},
-{"name":"Codex CLI","type":"Lokal agent","task":"Økt aktiv","status":"aktiv","last":"2026-10-12T22:22:00+02:00","link":""},
-{"name":"Cursor CLI","type":"Lokal agent","task":"Ukjent","status":"ledig","last":"","link":""},
-{"name":"Hermes Agent","type":"Lokal agent","task":"Kjører Qwen3.5-9B via llama-server","status":"aktiv","last":"2026-10-12T22:25:00+02:00","link":""},
-{"name":"Hermes-rådet","type":"Hermes-profiler","task":"8 rådsprofiler","status":"ledig","last":"","link":""},
-{"name":"Antigravity","type":"Lokal agent","task":"Ukjent","status":"ledig","last":"","link":""},
-{"name":"ChatGPT","type":"App","task":"Ingen lokale logger","status":"ledig","last":"","link":""}],
-"repos":[]}
+{
+    "updated":  "2026-10-12T22:30:58+02:00",
+    "workers":  [
+                    {
+                        "name":  "TussieBot",
+                        "type":  "Grok Bot (orkestrator)",
+                        "task":  "Bygger modelloversikt på tussienorway.github.io/huggingface",
+                        "status":  "aktiv",
+                        "last":  "2026-10-12T22:30:00+02:00",
+                        "link":  "https://github.com/tussienorway"
+                    },
+                    {
+                        "name":  "Multi-Mind Forsker",
+                        "type":  "Grok Bot",
+                        "task":  "Modelltester: 4B, Hermes-4-14B, AgentTuned 9B, Gemma 4",
+                        "status":  "aktiv",
+                        "last":  "2026-10-12T21:39:00+02:00",
+                        "link":  ""
+                    },
+                    {
+                        "name":  "Lokal Agent-Bygger",
+                        "type":  "Grok Bot",
+                        "task":  "PR #24 (følelsesmodell, shadow mode) merget",
+                        "status":  "ledig",
+                        "last":  "2026-10-12T21:00:00+02:00",
+                        "link":  "https://github.com/tussienorway/majere-core/pull/24"
+                    },
+                    {
+                        "name":  "LLmModelResercher",
+                        "type":  "Grok Bot",
+                        "task":  "Ingen kjent oppgave",
+                        "status":  "ledig",
+                        "last":  "",
+                        "link":  ""
+                    },
+                    {
+                        "name":  "MajereAi",
+                        "type":  "Grok Bot",
+                        "task":  "Ingen kjent oppgave",
+                        "status":  "ledig",
+                        "last":  "",
+                        "link":  "https://github.com/tussienorway/majere-site"
+                    },
+                    {
+                        "name":  "Codex CLI",
+                        "type":  "Lokal agent",
+                        "task":  "Codex-økt",
+                        "status":  "aktiv",
+                        "last":  "2026-10-12T22:22:11+02:00",
+                        "link":  ""
+                    },
+                    {
+                        "name":  "Cursor CLI",
+                        "type":  "Lokal agent",
+                        "task":  "cursor-agent-økt",
+                        "status":  "ledig",
+                        "last":  "2026-10-12T21:08:21+02:00",
+                        "link":  ""
+                    },
+                    {
+                        "name":  "Hermes Agent",
+                        "type":  "Lokal agent",
+                        "task":  "Modell: ingen llama-server",
+                        "status":  "feil",
+                        "last":  "2026-10-12T22:30:37+02:00",
+                        "link":  ""
+                    },
+                    {
+                        "name":  "Hermes-rådet",
+                        "type":  "Hermes-profiler",
+                        "task":  "0 rådsprofiler",
+                        "status":  "ledig",
+                        "last":  "2026-10-12T17:18:09+02:00",
+                        "link":  ""
+                    },
+                    {
+                        "name":  "Antigravity",
+                        "type":  "Lokal agent",
+                        "task":  "Antigravity CLI",
+                        "status":  "ledig",
+                        "last":  "2026-10-11T11:02:53+02:00",
+                        "link":  ""
+                    },
+                    {
+                        "name":  "ChatGPT",
+                        "type":  "App",
+                        "task":  "Ingen lokale logger",
+                        "status":  "aktiv",
+                        "last":  "",
+                        "link":  ""
+                    }
+                ],
+    "repos":  [
+
+              ]
+}
