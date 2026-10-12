@@ -1,5 +1,5 @@
 {
-    "updated":  "2026-10-12T22:30:58+02:00",
+    "updated":  "2026-10-12T22:31:15+02:00",
     "workers":  [
                     {
                         "name":  "TussieBot",
@@ -60,15 +60,15 @@
                     {
                         "name":  "Hermes Agent",
                         "type":  "Lokal agent",
-                        "task":  "Modell: ingen llama-server",
+                        "task":  "Modell: Qwen3.5-9B-MTP-Q6_K.gguf",
                         "status":  "feil",
-                        "last":  "2026-10-12T22:30:37+02:00",
+                        "last":  "2026-10-12T22:31:12+02:00",
                         "link":  ""
                     },
                     {
                         "name":  "Hermes-rådet",
                         "type":  "Hermes-profiler",
-                        "task":  "0 rådsprofiler",
+                        "task":  "8 rådsprofiler",
                         "status":  "ledig",
                         "last":  "2026-10-12T17:18:09+02:00",
                         "link":  ""
