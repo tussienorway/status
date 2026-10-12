@@ -1,0 +1,12 @@
+<!doctype html><html lang="no"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Status – AI-arbeidere</title>
+<style>body{font-family:system-ui;background:#0f172a;color:#e2e8f0;margin:0;padding:20px}h1{margin:0 0 4px}.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}.c{background:#1e293b;border-radius:10px;padding:14px;border-left:5px solid #64748b}.aktiv{border-color:#22c55e}.feil{border-color:#ef4444}.b{font-size:12px;padding:2px 8px;border-radius:9px;background:#334155}.t{color:#94a3b8;font-size:13px}a{color:#60a5fa}li{margin:4px 0}</style></head><body>
+<h1>Hva holder AI-arbeiderne på med?</h1><p class="t" id="u"></p><div class="g" id="g"></div><h2>Tidslinje</h2><ul id="tl"></ul><h2>Repo-aktivitet</h2><ul id="r"></ul>
+<script>
+const f=s=>s?new Date(s).toLocaleString('no-NO',{timeZone:'Europe/Oslo'}):'–',e=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+async function load(){const d=await (await fetch('status.json?'+Date.now())).json();
+u.textContent='Sist oppdatert: '+f(d.updated)+' · oppdateres hvert 60. sekund';
+g.innerHTML=d.workers.map(w=>`<div class="c ${e(w.status)}"><b>${e(w.name)}</b> <span class="b">${e(w.status)}</span><div class="t">${e(w.type)}</div><p>${e(w.task)}</p><div class="t">Sist aktiv: ${f(w.last)}</div>${w.link?`<a href="${e(w.link)}">Lenke</a>`:''}</div>`).join('');
+tl.innerHTML=d.workers.filter(w=>w.last).sort((a,b)=>b.last.localeCompare(a.last)).map(w=>`<li>${f(w.last)} – <b>${e(w.name)}</b>: ${e(w.task)}</li>`).join('');
+r.innerHTML=(d.repos||[]).map(x=>`<li><a href="${e(x.url)}">${e(x.repo)}</a> – ${e(x.title)} (${f(x.time)})</li>`).join('')||'<li>Ingen ennå</li>';}
+load();setInterval(load,60000);
+</script></body></html>
